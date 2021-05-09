@@ -31,6 +31,9 @@
     <string name="reset_stats_summary">Battery stats will get reset when charging limit is reached</string>
     <string name="smart_charging_status_notif">Smart Charging is running</string>
     <string name="smart_charging_stoppped_notif">Charging limit is reached, stopped charging</string>
+    <!-- DT2W -->
+    <string name="dt2w_title">Double-Tap to wake</string>
+    <string name="dt2w_summary">When Double-tap to wake is enabled, you can touch the screen twice to turn it on</string>
     <!-- otg mode -->
     <string name="otg_mode_summary">Enable USB-OTG power supply for external headphones and flash drives</string>
     <string name="otg_mode_title">Enable USB-OTG</string>
