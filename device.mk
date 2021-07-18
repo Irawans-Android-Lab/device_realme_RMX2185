@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2020
+DEVICE_PATH := device/realme/RMX2185
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/realme/RMX2020/RMX2020-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/RMX2185/RMX2185-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -59,11 +59,11 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX2020
+    android.hardware.biometrics.fingerprint@2.1-service.RMX2185
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
@@ -86,8 +86,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6768.rc \
-    fstab.mt6768 \
+    init.mt6765.rc \
+    fstab.mt6765 \
     perf_profile.sh
 
 # Keylayouts
@@ -103,7 +103,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.RMX2020
+    android.hardware.light@2.0-service.RMX2185
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -131,7 +131,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.mt6768.rc
+    init.recovery.mt6765.rc
 
 # RcsService
 PRODUCT_PACKAGES += \
