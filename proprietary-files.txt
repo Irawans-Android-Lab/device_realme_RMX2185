@@ -5,16 +5,21 @@ etc/apns-conf.xml:product/etc/apns-conf.xml
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+# Engineering Mode
+-priv-app/EngineerMode/EngineerMode.apk
+lib/libem_support_jni.so
+lib64/libem_support_jni.so
 
 # Kernel Power Off Charging (KPOC)
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 
-#camera
-vendor/lib/libdpframework.so:product/vendor_overlay/29/lib/libdpframework.so|9b7726891d7432869742d02674cb367d770ed772
-vendor/lib64/libdpframework.so:product/vendor_overlay/29/lib64/libdpframework.so|48d574415db7f42a855841197a81039274edd20a
+# MTK-IMS
+-priv-app/ImsService/ImsService.apk
 
-vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so|f64b62e94a3f6edb661b7b74c3ec34c19ee710bb
+#camera
+vendor/lib/libdpframework.so:product/vendor_overlay/29/lib/libdpframework.so
+vendor/lib64/libdpframework.so:product/vendor_overlay/29/lib64/libdpframework.so
+
+vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so
