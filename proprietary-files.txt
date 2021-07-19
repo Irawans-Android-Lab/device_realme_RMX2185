@@ -1,9 +1,13 @@
-#APNs
+# APNs
 etc/apns-conf.xml:product/etc/apns-conf.xml
 
 # Bluetooth (AptX)
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
+
+# Camera - from RMX2185_11_A.65
+vendor/lib/libdpframework.so:product/vendor_overlay/29/lib/libdpframework.so|c65a86fb5e7a0f71183e86e52ef023eae16eaddc
+vendor/lib64/libdpframework.so:product/vendor_overlay/29/lib64/libdpframework.so|54395fb0de799d1162405bff912e1095013b400f
 
 # Engineering Mode
 -priv-app/EngineerMode/EngineerMode.apk
@@ -17,9 +21,3 @@ lib/libshowlogo.so
 
 # MTK-IMS
 -priv-app/ImsService/ImsService.apk
-
-#camera
-vendor/lib/libdpframework.so:product/vendor_overlay/29/lib/libdpframework.so
-vendor/lib64/libdpframework.so:product/vendor_overlay/29/lib64/libdpframework.so
-
-vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so
