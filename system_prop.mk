@@ -51,14 +51,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.lmk.swap_free_low_percentage=20 \
     ro.lmk.kill_timeout_ms=100
 
-# NFC
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.sys.nfc.disPowerSave=1 \
-    persist.sys.nfc.default=on \
-    persist.sys.nfc.aid_overflow=true \
-    ro.product.cuptsm=OPPO|ESE|01|02 \
-    persist.sys.nfc.antenna_area=bottom
-
 # OMX
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
