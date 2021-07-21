@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "RMX2189_overlay",
+    sdk_version: "current",
+    product_specific: true,
+}

@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="android.overlay.RMX2180"
+        android:versionCode="1"
+        android:versionName="1.0">
+        <overlay android:targetPackage="android"
+                android:requiredSystemPropertyName="ro.product.model"
+		android:requiredSystemPropertyValue="RMX2180"
+		android:priority="800"
+		android:isStatic="true" />
+</manifest>
