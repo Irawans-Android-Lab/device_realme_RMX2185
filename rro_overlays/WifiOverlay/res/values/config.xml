@@ -42,6 +42,6 @@
     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
 	
 	<!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Realme C3/Narzo 10A</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Realme G35 Series</string>
 	
 </resources>
