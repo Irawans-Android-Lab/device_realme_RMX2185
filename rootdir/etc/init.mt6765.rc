@@ -87,6 +87,10 @@ on boot
     chmod 0666 /proc/touchpanel/double_tap_enable
     write /proc/touchpanel/double_tap_enable 1
 
+    # WiFi fix by Techyminati
+    setprop ro.boot.vendor.overlay.static false
+    setprop vendor.connsys.driver.ready yes
+
 on property:sys.boot_completed=1
     # Toggle airplane mode on and off on boot to enable volte.
     # This hack needs ImsInit commit to request ims on boot to work properly
