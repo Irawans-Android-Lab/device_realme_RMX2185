@@ -49,8 +49,8 @@ void setRMX(unsigned int variant)
 {
     RMX218X_props prop[4] = {};
 
-    std::string build_desc = "full_oppo6765-user 10 QP1A.190711.020 bedd37e98646d3a1 release-keys";
-    std::string build_fingerprint = "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys";
+    std::string build_desc = "sys_oplus_mssi_64_cn-user 11 RP1A.200720.011 1609743540423 release-keys";
+    std::string build_fingerprint = "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys";
 
     // RMX2180
     prop[0] = {
@@ -101,10 +101,8 @@ void setRMX(unsigned int variant)
     property_override("ro.product.bootimage.name", prop[variant].device_build.c_str());
     property_override("ro.odm.build.fingerprint", prop[variant].build_fingerprint.c_str());
     property_override("ro.vendor.build.fingerprint", prop[variant].build_fingerprint.c_str());
-    property_override("ro.vendor.oppo.fingerprint", prop[variant].build_fingerprint.c_str());
     property_override("ro.product.odm.name", prop[variant].device_build.c_str());
     property_override("ro.product.vendor.name", prop[variant].device_build.c_str());
-    property_override("ro.vendor.oppo.product.name", prop[variant].device_build.c_str());
 }
 
 void set_dalvik()
