@@ -147,9 +147,6 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
 
-# Treble
-TARGET_COPY_OUT_PRODUCT := system/product
-
 #DPI
 TARGET_SCREEN_DENSITY := 423
 
