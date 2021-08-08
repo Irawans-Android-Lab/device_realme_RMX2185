@@ -109,7 +109,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-mediatek
+    lineage.livedisplay@2.0-service-RMX2185
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
