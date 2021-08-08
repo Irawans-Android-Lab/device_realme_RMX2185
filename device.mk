@@ -26,7 +26,9 @@ $(call inherit-product, vendor/realme/RMX2185/RMX2185-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+PRODUCT_PACKAGES += \
+    parts.rc \
+    RealmeParts
 
 # Realme Dirac
 $(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
