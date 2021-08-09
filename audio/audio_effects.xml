@@ -23,8 +23,6 @@
         <library name="dynamics_processing" path="libdynproc.so"/>
         <library name="pre_processing" path="libaudiopreprocessing.so"/>
         <!-- #ifdef VENDOR_EDIT-->
-        <!-- Yunmang.Xiao@PSW.MM.AudioServer.Effect.1065522, 2019/09/24, Add for dirac effect -->
-        <library name="dirac" path="libdirac.so"/>
         <!-- Yunmang.Xiao@PSW.MM.AudioServer.Effect.2019/11/04 add for dolby -->
         <!--DOLBY DAP-->
         <library name="dap" path="libswdap.so"/>
@@ -72,9 +70,6 @@
         <effect name="dynamics_processing" library="dynamics_processing" uuid="e0e6539b-1781-7261-676f-6d7573696340"/>
         <effect name="aec" library="pre_processing" uuid="9f35ed76-0b66-4330-8f79-e39ca266dc7c"/>
         <!-- #ifdef VENDOR_EDIT-->
-        <!-- Yunmang.Xiao@PSW.MM.AudioServer.Effect.1065522, 2019/09/24, Add for dirac effect -->
-        <effect name="dirac_controller" library="dirac" uuid="b437f4de-da28-449b-9673-667f8b9643fe"/>
-        <effect name="dirac_music" library="dirac" uuid="b437f4de-da28-449b-9673-667f8b964304"/>
         <!-- Yunmang.Xiao@PSW.MM.AudioServer.Dolby.2019/11/04 add for dolby -->
         <!--DOLBY DAP-->
         <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
